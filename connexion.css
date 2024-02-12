@@ -33,4 +33,15 @@ button {
     margin: 1rem 0;
     border-radius: 5px;
 }
+.petitDivConnexion{
+    border: 2px solid rgb(102, 226, 207);
+    right: 0%;
+    top: 20%;
+    font-weight: bold;
+    text-align: center;
+    height: 6em;
+    z-index: 800 !important;
+    position: absolute;
+  }
+ 
 
