@@ -42,6 +42,10 @@ button {
     height: 6em;
     z-index: 800 !important;
     position: absolute;
+    display: none !important;
   }
- 
+
+  
+
+
 
