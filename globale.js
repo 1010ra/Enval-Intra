@@ -15,19 +15,24 @@
 
   function notification() {
       divDnotification.classList.remove('d-none');
-  
-     
 
       setTimeout(() => {
           divDnotification.classList.add('d-none');
       }, 4000);
   }
-  // Appelez la fonction pour afficher la notification
-  notification();
+   // Appelez la fonction pour afficher la notification
+   notification();
+
+
+  
 
 
   btnConnexion.addEventListener('click', () => {
-    console.log('hello');
+    // console.log('hello');
+    if (inputNom.value === "" ||inputPassword === "" ) {
+      prompt("la question secrete : quel est le surnom de Nueuve?"," ");
+    }
+    
 
   })
 
