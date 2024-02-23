@@ -42,7 +42,40 @@ button {
     height: 6em;
     z-index: 800 !important;
     position: absolute;
-    display: none !important;
+    display: none ;
+    
+  }
+
+  #titreDnotification{
+    margin: 0;
+    background-color: #74c6bd;
+    color: white;
+  }
+  #paragrapDnotification{
+    background-color: white;
+  }
+
+
+  
+  .petitDivheure{
+    border: 2px solid rgb(102, 226, 207);
+    right: 0%;
+    top: 40%;
+    font-weight: bold;
+    text-align: center;
+    height: 6em;
+    z-index: 800 !important;
+    position: absolute;
+    display: none ;
+    
+  }
+  .déblockage{
+    margin: 0;
+    background-color: #74c6bd;
+    color: white;
+  }
+  .divComptage{
+    margin-top: 8%;
   }
 
   

@@ -190,32 +190,49 @@ const suivi = [
         datePrevue: "20/03/2023",
         rapport:"Disponible",
     },
+    
 ]
 
 
 //==============================les utilisateurs 
 
-let user1 = {
-    id: 1,
-    pseudo: "admin",
-    nom:"essai test",
-    password:"1234",
-    email:"essai@gmail.com",
-    bio:"je suis le test",
-    photo: "Image/avatar.jpg"
-}
-let user2 = {
-    id: 2,
-    pseudo: "chef",
-    nom:"chef de projet",
-    password:"8888",
-    email:"chef@gmail.com",
-    bio:"je suis le chef",
-    photo: "Image/avatar.jpg"
-}
+let users = [
+    {
+        id: 1,
+        pseudo: "admin",
+        nom:"essai test",
+        password:"1234",
+        email:"essai@gmail.com",
+        bio:"je suis le test",
+        photo: "Image/avatar.jpg"
+    },
+    {
+        id: 2,
+        pseudo: "chef",
+        nom:"chef de projet",
+        password:"8888",
+        email:"chef@gmail.com",
+        bio:"je suis le chef",
+        photo: "Image/avatar.jpg"
+    },
+    {
+        id: 3,
+        pseudo: "toula",
+        nom:"chef de projet",
+        password:"9999",
+        email:"toula@gmail.com",
+        bio:"je suis le chef",
+        photo: "Image/avatar.jpg"
+    },
 
-const tabUtilisateurs = [user1, user2]
+]
+// const tabUtilisateurs = [users]
+localStorage.setItem('utilisateurs', JSON.stringify(users));
 
-localStorage.setItem('utilisateurs', JSON.stringify(tabUtilisateurs));
+
+
+ 
+
+
 
 
