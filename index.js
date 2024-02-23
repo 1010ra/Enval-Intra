@@ -34,6 +34,7 @@ btnConnexion.addEventListener('click', () => {
                     divDnotification.setAttribute('style', 'display:none');
                 }, 3000);
                 temp++;
+                console.log(temp);
 
                 if (temp === 3) {
                     paragrapDnotification.textContent = 'votre compte est bloqué!'
