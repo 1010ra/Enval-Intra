@@ -1,6 +1,10 @@
 const divDnotification = document.getElementById("divDnotification");
 const titreDnotification = document.getElementById('titreDnotification');
 const paragrapDnotification = document.getElementById("paragrapDnotification");
+const div2Notif = document.getElementById('div2Notif');
+const texteConbinaison = document.getElementById('texteConbinaison');
+const titreCompte = document.getElementById('titreCompte');
+
 const btnConnexion = document.getElementById('btnConnexion');
 const inputNom = document.getElementById('inputNom');
 const inputPassword = document.getElementById('inputPassword');
@@ -10,13 +14,17 @@ const conn = document.getElementById('conn');
 const utilisateurs = JSON.parse(localStorage.getItem('utilisateurs'));
 console.log(utilisateurs);
 
+
+    let temp = 0;
+    let reponse = '';
+
 btnConnexion.addEventListener('click', () => {
     let pseudo = inputNom.value;
     console.log(pseudo);
     let inputPasword = inputPassword.value;
     console.log(inputPasword);
-    let temp = 0;
-    let reponse = '';
+
+    
 
             let verifierPourTout = false;
             for (let i = 0; i < utilisateurs.length; i++) {
@@ -27,6 +35,7 @@ btnConnexion.addEventListener('click', () => {
                     break;
                 }
             }
+            
 
             if (!verifierPourTout) {
                 divDnotification.setAttribute('style', 'display:block');
@@ -34,60 +43,63 @@ btnConnexion.addEventListener('click', () => {
                     divDnotification.setAttribute('style', 'display:none');
                 }, 3000);
                 temp++;
+
                 console.log(temp);
 
                 if (temp === 3) {
-                    paragrapDnotification.textContent = 'votre compte est bloqué!'
-                    divDnotification.style.display = 'block';
+                    temp = 0;
+                    texteConbinaison.textContent = 'Oups !!! votre compte est tamporairement bloqué!'
+                    div2Notif.style.display = 'block';
                     setTimeout(function () {
-                        divDnotification.style.display = 'none';
+                        div2Notif.style.display = 'none';
+                        
                         reponse = prompt("Question secrète: quel est le nom de ton amie ?");
-
-                        if (reponse === utilisateurs[0].question) {
-                            alert("vous pouvez vous connecter à dashboard");
-                            window.location.href = 'dashboard.html';
-                        } else {
-                            paragrapDnotification.textContent = 'votre compte est  bloqué!'
-                            divDnotification.style.display = 'block';
-                            document.querySelector('.sub').style.display = 'none';
-                            setTimeout(function () {
-                                divDnotification.style.display = 'none';
-                                document.querySelector('.sub').style.display = 'none';
-                            }, 3000);
-
-                            // Timer setup
-                            document.querySelector('.petitDivheure').style.display = 'block';
-                            const minutes = 5;
-                            const comptage = document.querySelector('.comptage');
-
-                            function miseAJourcomptage(tempsCompter) {
-                                const heures = Math.floor(tempsCompter / 3600);
-                                const minutes = Math.floor((tempsCompter % 3600) / 60);
-                                const secondes = tempsCompter % 60;
-
-                                comptage.textContent = `0${heures}:0${minutes}:${secondes}`;
-
-                                if (tempsCompter <= 0) {
-                                    clearInterval(intervalId);
-                                    document.querySelector('.sub').style.display = 'block';
-                                    document.querySelector('.petitDivheure').style.display = 'none';
-                                }
-                            }
-
-                            let tempsCompter = minutes * 60;
-                            miseAJourcomptage(tempsCompter);
-
-                            const intervalId = setInterval(() => {
-                                tempsCompter--;
-                                miseAJourcomptage(tempsCompter);
-                            }, 1000);
-                        }
                     }, 2000);
+                        // if (reponse === "rakiss") {
+                        //     alert("vous pouvez vous connecter à dashboard");
+                        //     window.location.href = 'dashboard.html';
+                        // } else {
+                        //     texteConbinaison.textContent = 'votre compte est definitivement  bloqué!'
+                        //     div2Notif.style.display = 'block';
+                        //     document.querySelector('.sub').style.display = 'none';
+                        //     setTimeout(function () {
+                        //         div2Notif.style.display = 'none';
+                        //         document.querySelector('.sub').style.display = 'none';
+                        //     }, 3000);
+
+                        //     // Timer setup
+                        //     document.querySelector('.petitDivheure').style.display = 'block';
+                        //     const minutes = 5;
+                        //     const comptage = document.querySelector('.comptage');
+
+                        //     function miseAJourcomptage(tempsCompter) {
+                        //         const heures = Math.floor(tempsCompter / 3600);
+                        //         const minutes = Math.floor((tempsCompter % 3600) / 60);
+                        //         const secondes = tempsCompter % 60;
+
+                        //         comptage.textContent = `0${heures}:0${minutes}:${secondes}`;
+
+                        //         if (tempsCompter <= 0) {
+                        //             clearInterval(intervalId);
+                        //             document.querySelector('.sub').style.display = 'block';
+                        //             document.querySelector('.petitDivheure').style.display = 'none';
+                        //         }
+                        //     }
+
+                        //     let tempsCompter = minutes * 60;
+                        //     miseAJourcomptage(tempsCompter);
+
+                        //     const intervalId = setInterval(() => {
+                        //         tempsCompter--;
+                        //         miseAJourcomptage(tempsCompter);
+                        //     }, 1000);
+                        // }
+                    
                 } else {
-                    divDnotification.style.display = 'block';
-                    setTimeout(function () {
-                        divDnotification.style.display = 'none';
-                    }, 2000);
+                    // div2Notif.style.display = 'block';
+                    // setTimeout(function () {
+                    //     div2Notif.style.display = 'none';
+                    // }, 2000);
                 }
             }
 });
