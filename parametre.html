@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="CSS/global.css">
+    <link rel="stylesheet" href="para.css">
+    <title>parametre</title>
+</head>
+
+<body>
+    <div class="content" id="content">
+        <!-- debut sidebar -->
+        <div class="sidbar" id="sidbar">
+            <div>
+                <img src="Image/inval.png" alt="logo" id="Slogo">
+            </div>
+
+            <ul id="menu">
+                <li class="">
+                    <a href="dashboard.html" class="">
+                        <i class="fs-4 bi bi-grid"></i> <span class="">Dashboard</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="facture.html" class="">
+                        <i class="fs-4 bi bi-receipt"></i> <span class="">Facture</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="commande.html" class="">
+                        <i class="fs-4 bi bi-car-front-fill"></i> <span class="">Commande</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="suivi.html" class="">
+                        <i class="fs-4 bi bi-bag"></i> <span class="">Suivi</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="serviceClient.html" class="">
+                        <i class="fs-4 bi bi-chat-left-text"></i> <span class="">Service Client</span>
+                    </a>
+                </li>
+                <div class="bot" id="bot">
+                    <li class="active">
+                        <a href="parametre.html" class="">
+                            <i class="fs-4 bi bi-gear"></i> <span class="">Paramètre Compte</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html" class="">
+                            <i class="fs-4 bi bi-box-arrow-left"></i> <span class="">Déconnexion</span>
+                        </a>
+                    </li>
+                </div>
+            </ul>
+        </div>
+        <!-- fin sidebar -->
+
+        <!-- debut élément droit -->
+        <div class="right" id="right">
+            <!-- debut navbar -->
+            <div class="navbar" id="navbar">
+                <div class="nav-left">
+                    <a href="#sidbar" class="btnh" id="btn_menu">
+                        <span class="burger"> <i class="bi bi-list"></i></span>
+                    </a>
+                </div>
+                <div class="nav-right">
+                    <div class="bella" style="margin-left: 2%;">
+                        <i class="bi bi-bell"></i>
+                        <span class="badge">7</span>
+                       </div>
+                    <img  src="Image/avatar.jpg" alt="" id="prof">
+
+                </div>
+            </div>
+            <!-- fin navbar -->
+
+
+            <div class="contPara" id="idPara">
+
+                <div id="divModi" class="modiPasse d-none">
+                    <h2>Modifier mot de passe</h2>
+                    <form action="">
+                        <label for="">Ancien mot de passe</label>
+                        <input type="text" name="" id="passAncien">
+                        <label for="">Nouveau mot de passe</label>
+                        <input type="text" name="" id="passNouveau">
+                        <label for="">Confirmation</label>
+                        <input type="text" name="" id="inputConfirm">
+                        <button id="EnvoyerBtn" type="submit">Envoyer</button>
+                    </form>
+                </div>
+
+                <div id="divDnotification" class="petitDivConnexion d-none ">
+                    <h2 id="titreDnotification" class="classConnexion">Connexion</h2>
+                    <p id="paragrapDnotification" class="conbinaisonIdentifiant">Oups!!! la conbinaison  login/mot de passe est incorrect</p>
+                  </div>
+
+                <div class="conteneur3">
+                    <h2 class="comptePara">parametre de Compte</h2>
+                    <div class="flechier">
+                        <a href="dashboard.html"><i class="bi bi-arrow-return-left"></i> Retour au tableaux de bord</a>
+                        <div class="bTN">
+                            <button id="modifMotPass">Modifier le mot de passe</button>
+                            <button onclick="suppression()" id="SuppCompte">Suprimer le compte</button>
+                        </div>
+                    </div>
+                    <div class="divTexte">
+                        <h2>Modifier le profil</h2>
+                        <h2>votre avatar</h2>
+                    </div>
+                    <div class="biographie">
+                        <div class="divForm">
+                            <form action="">
+                                <label for="nom">Nom</label>
+                                <input id="inputNom" type="text" placeholder="Nom">
+                                <label for="email">Email</label>
+                                <input id="inputEmail" type="email" placeholder="Email">
+                                <label for="Biographie">Biographie</label>
+                                <textarea name="" id="inputBiographie" cols="30" rows="10" placeholder=""></textarea>
+                                <button id="btnEnvoyer" class="btnEnvoyer">Envoyer</button>
+                            </form>
+                        </div>
+                        <div class="avatar">
+                            <div class="circleAvatar">
+                                <label for="image-picker">
+                                    <img id="image-preview" src="./Image/avatar.jpg" alt="" />
+                                </label>
+                                <input id="image-picker" type="file" accept="image/*" />
+                            </div>
+                            <div class="divBtnDeux">
+                                <button id="ModifierPhoto">Modifier la photo</button>
+                                <button onclick="suppressionAvatar()" id="SupprimerPhoto">Supprimer la photo</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+            <script src="parametre.js"></script>
+            <script src="data.js"></script>
+            <script src="globale.js"></script>
+            <script src="facture.js"></script>
+</body>
+
+</html>

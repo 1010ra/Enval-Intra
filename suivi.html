@@ -46,7 +46,7 @@
                 </li>
                 <div class="bot" id="bot">
                     <li class="">
-                        <a href="#" class="">
+                        <a href="parametre.html" class="">
                             <i class="fs-4 bi bi-gear"></i> <span class="">Paramètre Compte</span>
                         </a>
                     </li>
@@ -70,8 +70,10 @@
                   </a>
                 </div>
                 <div class="nav-right">
-                    <i class="bi bi-bell"></i>
-                    <span class="badge">7</span>
+                    <div class="bella" style="margin-left: 2%;">
+                        <i class="bi bi-bell"></i>
+                        <span class="badge">7</span>
+                       </div>
                     <img src="Image/avatar.jpg" alt="" id="prof">
 
                 </div>
@@ -79,99 +81,35 @@
             <!-- fin navbar -->
             <!-- debut tableau -->
             <div class="contenu" id="contenu">
-                <div class="hack-suiv">
-                <table class="table" id="suiv">
-                    <thead>
-                        <tr>
-                            <th colspan="7">
-                                <h1>Suivi des Echantillions</h1>
-                            </th>
-                            
-                        </tr>
-                        <tr>
-                            <th >Lot</th>
-                            <th colspan="2" >Etat</th>
-                            <th >Date prévu</th>
-                            <th >Rapport</th>
-                            <th colspan="2">Cliquez pour voir le rapport</th>
-                        </tr>
-                    </thead>
-                    <tbody id="tbodySuivi">
-                        <!-- <tr>
-                            <td >TE202303001</td>
-                            <td colspan="2"  >Non disponible</td>
-                            <td >12/03/2023</td>
-                            <td >En cours</td>
-                            <td colspan="2"> <a href="detail.html">
-                                <button class="btnt" type="button" id="con">VOIR</button>
-                            </a></td>
-                        </tr>
-                        <tr>
-                            <td  >TE202302023</td>
-                            <td colspan="2"  ></td>
-                            <td  ></td>
-                            <td  ></td>
-                            <td colspan="2"><button type="button" class="btnt">VOIR</button></td>
-                        </tr>
-                        <tr>
-                            <td  >TE20230190</td>
-                            <td colspan="2"  ></td>
-                            <td  ></td>
-                            <td  ></td>
-                            <td colspan="2"><button type="button" class="btnt">VOIR</button></td>
-                        </tr>
-                        <tr>
-                            <td  >Carbonate</td>
-                            <td colspan="2"  ></td>
-                            <td  ></td>
-                            <td  ></td>
-                            <td colspan="2"><button type="button" class="btnt">VOIR</button></td>
-                        </tr>
-                        <tr>
-                            <td  >Chlourire</td>
-                            <td colspan="2"  ></td>
-                            <td  ></td>
-                            <td  ></td>
-                            <td colspan="2"><button type="button" class="btnt">VOIR</button></td>
-                        </tr>
-                        <tr>
-                            <td  >CO2 libre</td>
-                            <td colspan="2"  ></td>
-                            <td  ></td>
-                            <td  ></td>
-                            <td colspan="2"><button type="button" class="btnt">VOIR</button></td>
-                        </tr>
-                        <tr>
-                            <td  >Conductivité electrique</td>
-                            <td colspan="2"  ></td>
-                            <td  ></td>
-                            <td  ></td>
-                            <td colspan="2"><button type="button" class="btnt">VOIR</button></td>
-                        </tr>
-                        <tr>
-                            <td  >pH/Temperature</td>
-                            <td colspan="2"  ></td>
-                            <td  ></td>
-                            <td  ></td>
-                            <td colspan="2"><button type="button" class="btnt" >VOIR</button></td>
-                        </tr>
-                        <tr>
-                            <td  >Couleur Brute</td>
-                            <td colspan="2"  ></td>
-                            <td  ></td>
-                            <td  ></td>
-                            <td colspan="2"><button type="button" class="btnt">VOIR</button></td>
-                        </tr>
-                        <tr>
-                            <td  >Cyanure libre</td>
-                            <td colspan="2"  ></td>
-                            <td  ></td>
-                            <td  ></td>
-                            <td colspan="2"><button type="button" class="btnt">VOIR</button></td>
-                        </tr> -->
-                    </tbody>
-                </table>
-            </div>
+                
+                <div class="hack-com">
+                    <div id="titre" style="display: flex; justify-content: space-around; color: #8f8a8a;">
+                                <h3 style="font-size: 32px;">Suivi des échantillons</h3>
+                                <div style="  margin-top: 1%;" class="rech">
+                                    <i class="bi bi-search"></i>
+                                    <input type="search" id="searchInputFacture" class="tsearch" placeholder="Search"
+                                        aria-label="Search" aria-describedby="search-addon" />
+                                </div>
+                    </div>
+                   
+                        <table class="table" id="com">
+                          <thead style="background-color: #3697ab;color: white;">
+                            <tr style="font-size: 30px;">
+                            <th>Lot <i class=" bi bi-sort-alpha-down"></i></th>
+                            <th>Etat <i class=" bi bi-sort-alpha-down"></i></th>
+                            <th colspan="2">Date prévue <i class=" bi bi-sort-alpha-down"></i></th>
+                            <th>Rapport <i class=" bi bi-sort-alpha-down"></i></th>
+                            <th colspan="2">Cliquez pour voir </th>
+                          </tr>
+                          </thead>
+                          <tbody id="tbodySuivi">
+                        
+                          </tbody>
+                        </table>
+                     </div>
+                    
+
+
 
             </div>
             <!-- fin tableau -->
@@ -181,7 +119,6 @@
     </div>
 
     <script src="data.js"></script>
-    <script src="globale.js"></script>
     <script src="suivi.js"></script>
 </body>
 

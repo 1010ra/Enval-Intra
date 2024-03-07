@@ -1,0 +1,316 @@
+#divModi{
+    border: 2px solid #1b8494;
+    background-color: white;
+    width: 20rem;
+    margin-left: 20%;
+    position: absolute;
+    border-radius: 5%;
+    z-index: 600;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1%;
+   
+}
+#passAncien{
+    width: 100%;
+    background-color: #eceaea;
+    border-radius: 5px;
+    border: none;
+    padding: 1%;
+}
+#passNouveau{
+    width: 100%;
+    background-color: #eceaea;
+    border-radius: 5px;
+    border: none;
+    padding: 1%;
+}
+#inputConfirm{
+    width: 100%;
+    background-color: #eceaea;
+    border-radius: 5px;
+    border: none;
+    padding: 1%;
+}
+#EnvoyerBtn{
+    margin-top: 5%;
+    width: 100%;
+}
+.d-none{
+    display: none !important;
+}
+
+
+
+#idPara{
+    background-color: white;
+    height: 100vh;
+ 
+    display: grid;
+   
+  }
+.comptePara{
+    margin-top: 10px;
+    padding: 2%;
+}
+ 
+.flechier {
+    padding: 1%;
+    display: flex;
+    justify-content:space-between ;
+}
+
+.flechier a {
+    text-decoration: none;
+    color: #adb745;
+    font-size: 20px;
+}
+
+.flechier button {
+    height: 3rem;
+    width: 15rem;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    border: none;
+}
+
+.flechier #modifMotPass {
+    background-color: #1b8494;
+    border: 2px solid #1b8494;
+}
+
+.flechier #modifMotPass:hover {
+    background-color: white;
+    color: #1b8494;
+}
+
+.flechier #modifMotPass:active {
+    background-color: #1b8494;
+    color: white;
+}
+
+.flechier #SuppCompte {
+    background-color: #fd3324;
+}
+
+.flechier #SuppCompte:hover {
+    background-color: white;
+    color: #fd3324;
+    border: 2px solid #fd3324;
+}
+
+.flechier #SuppCompte:active {
+    background-color: #fd3324;
+    color: white;
+    border: 2px solid #fd3324;
+}
+
+.bTN{
+    display: flex;
+    gap: 30px;
+}
+.divTexte{
+    display: flex;
+     gap: 55%;
+    font-size: 15px;
+    
+}
+h2{
+    padding: 1%;  
+}
+
+.biographie {
+  
+    display: flex;
+    justify-content: space-between;
+    
+}
+.divForm{
+    width: 100%;
+}
+
+.biographie h2 {
+    text-align: left;
+    padding: 3%;
+ 
+}
+
+.avatar {
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center ;
+}
+
+.avatar h2 {
+    text-align: left;
+   
+}
+
+
+.divBtnDeux {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 2%;
+}
+
+.divBtnDeux button {
+    height: 3rem;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+
+}
+
+.divBtnDeux #ModifierPhoto {
+    background-color: #1b8494;
+    color: white;
+}
+
+.divBtnDeux #ModifierPhoto:hover {
+    background-color: white;
+    color: #1b8494;
+    border: 2px solid #1b8494;
+}
+
+.divBtnDeux #ModifierPhoto:active {
+    background-color: #1b8494;
+    color: white;
+    border: 2px solid #1b8494;
+}
+
+.divBtnDeux #SupprimerPhoto {
+    background-color: #fd3324;
+    color: white;
+    margin-top: 2%;
+}
+
+.divBtnDeux #SupprimerPhoto:hover {
+    background-color: white;
+    color: #fd3324;
+    border: 2px solid #fd3324;
+}
+
+.divBtnDeux #SupprimerPhoto:active {
+    background-color: #fd3324;
+    color: white;
+    border: 2px solid #fd3324;
+}
+
+
+
+form label {
+    font-size: 30px;
+    width: fit-content;
+    margin-left: 1%;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+     padding: 1%;
+ 
+}
+
+form input:focus {
+    outline: 2px solid #adb745;
+
+}
+
+form textarea {
+    background-color: #eceaea;
+    border-radius: 5px;
+    border: none;
+    padding: 1%;
+}
+
+form textarea:focus {
+    outline: 2px solid #adb745;
+}
+
+form button {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    height: 3rem;
+    border-radius: 5px;
+    background-color: #1b8494;
+    border: none;
+    font-size: 30px;
+    color: white;
+}
+
+form button:hover {
+    background-color: white;
+    color: #1b8494;
+    border: 2px solid #1b8494;
+}
+
+form button:active {
+    background-color: #1b8494;
+    color: white;
+    border: 2px solid #1b8494;
+}
+#ModifierPhoto{
+    width: 50vh;
+}
+#SupprimerPhoto{
+    width: 50vh;
+}
+#inputNom{
+    border-radius: 5px;
+    background-color: #eceaea;
+    border: none;
+    padding: 2%;
+}
+#inputEmail{
+    border-radius: 5px;
+    background-color: #eceaea;
+    border: none;
+    padding: 2%;
+}
+
+.petitDivConnexion{
+    border: 2px solid rgb(102, 226, 207);
+    right: 0%;
+    top: 20%;
+    font-weight: bold;
+    text-align: center;
+    height: 6em;
+    background-color: white;
+    z-index: 800 !important;
+    position: absolute;
+   
+  
+    
+  }
+
+  #titreDnotification{
+    margin: 0;
+    background-color: #74c6bd;
+    color: white;
+  }
+  #paragrapDnotification{
+    background-color: white;
+  }
+
+
+  
+  .circleAvatar{
+    height: 20rem;
+    width: 20rem; 
+    border-radius: 50%;
+    background-color: #74c6bd;
+  }
+  #image-preview {
+    height: 20rem;
+    width: 20rem; 
+    border-radius: 50%; 
+}

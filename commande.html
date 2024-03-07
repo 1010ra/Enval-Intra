@@ -46,7 +46,7 @@
                 </li>
                 <div class="bot" id="bot">
                     <li class="">
-                        <a href="#" class="">
+                        <a href="parametre.html" class="">
                             <i class="fs-4 bi bi-gear"></i> <span class="">Paramètre Compte</span>
                         </a>
                     </li>
@@ -70,8 +70,10 @@
                   </a>
                 </div>
                 <div class="nav-right">
-                    <i class="bi bi-bell"></i>
-                    <span class="badge">7</span>
+                    <div class="bella" style="margin-left: 2%;">
+                        <i class="bi bi-bell"></i>
+                        <span class="badge">7</span>
+                       </div>
                     <img src="Image/avatar.jpg" alt="" id="prof">
 
                 </div>
@@ -79,102 +81,35 @@
             <!-- fin navbar -->
             <!-- debut tableau -->
             <div class="contenu" id="contenu">
+                
                 <div class="hack-com">
-                <table class="table" id="com">
-                    <thead>
-                        <tr>
-                            <th>
-                                <h3>Commande</h3>
-                            </th>
-                            <th></th>
-                            <th></th>
-                            <th></th>
-                            <th colspan="3">
-                                <div class="rech">
+                    <div id="titre" style="display: flex; justify-content: space-around; color: #8f8a8a;">
+                                <h3 style="font-size: 32px;">Commande</h3>
+                                <div style="  margin-top: 1%;" class="rech">
                                     <i class="bi bi-search"></i>
-                                    <input type="search" class="tsearch" placeholder="Search"
-                                        aria-label="Search" aria-describedby="search-addon"/>
-
+                                    <input type="search" id="searchInputFacture" class="tsearch" placeholder="Search"
+                                        aria-label="Search" aria-describedby="search-addon" />
                                 </div>
-                            </th>
-                        </tr>
+                    </div>
+                   
+                        <table class="table" id="com">
+                          <thead style="background-color: #3697ab;color: white;">
+                            <tr style="font-size: 30px;">
+                            <th>Commande <i class="bi bi-sort-alpha-down"></i></th>
+                            <th colspan="2">Laboratoire <i class="bi bi-sort-alpha-down"></i></th>
+                            <th>Date <i class="bi bi-sort-alpha-down"></i></th>
+                            <th colspan="2">Statut<i class="bi bi-sort-alpha-down"></i></th>
+                            <th colspan="2">Cliquez pour voir </th>
+                          </tr>
+                          </thead>
+                          <tbody id="tbodyCommande">
+                        
+                          </tbody>
+                        </table>
+                     </div>
+                    
 
-                        <tr>
 
-                            <th >Commandes</th>
-                            <th colspan="2" >Laboratoire</th>
-                            <th >Date</th>
-                            <th >Statut</th>
-                            <th colspan="2">Cliquez pour voir le rapport</th>
-                        </tr>
-                    </thead>
-                    <tbody id="tbodyTableau">
-                        <!-- <tr>
-                            <td >00012</td>
-                            <td colspan="2"  >Enval</td>
-                            <td >10/03/2023</td>
-                            <td >En cours</td>
-                            <td colspan="2"><button type="button" class="btnt">VOIR</button></td>
-                        </tr>
-                        <tr>
-                            <td  >00013</td>
-                            <td colspan="2"  ></td>
-                            <td  ></td>
-                            <td  ></td>
-                            <td colspan="2"><button type="button" class="btnt">VOIR</button></td>
-                        </tr>
-                        <tr>
-                            <td  >00013</td>
-                            <td colspan="2"  ></td>
-                            <td  ></td>
-                            <td  ></td>
-                            <td colspan="2"><button type="button" class="btnt">VOIR</button></td>
-                        </tr>
-                        <tr>
-                            <td  >00015</td>
-                            <td colspan="2"  ></td>
-                            <td  ></td>
-                            <td  ></td>
-                            <td colspan="2"><button type="button" class="btnt">VOIR</button></td>
-                        </tr>
-                        <tr>
-                            <td  >00016</td>
-                            <td colspan="2"  ></td>
-                            <td  ></td>
-                            <td  ></td>
-                            <td colspan="2"><button type="button" class="btnt">VOIR</button></td>
-                        </tr>
-                        <tr>
-                            <td  >00117</td>
-                            <td colspan="2"  ></td>
-                            <td  ></td>
-                            <td  ></td>
-                            <td colspan="2"><button type="button" class="btnt">VOIR</button></td>
-                        </tr>
-                        <tr>
-                            <td  >00118</td>
-                            <td colspan="2"  ></td>
-                            <td  ></td>
-                            <td  ></td>
-                            <td colspan="2"><button type="button" class="btnt">VOIR</button></td>
-                        </tr>
-                        <tr>
-                            <td  >00119</td>
-                            <td colspan="2"  ></td>
-                            <td  ></td>
-                            <td  ></td>
-                            <td colspan="2"><button type="button" class="btnt" >VOIR</button></td>
-                        </tr>
-                        <tr>
-                            <td  >00120</td>
-                            <td colspan="2"  ></td>
-                            <td  ></td>
-                            <td  ></td>
-                            <td colspan="2"><button type="button" class="btnt">VOIR</button></td>
-                        </tr>  -->
-                    </tbody>
-                </table>
-            </div>
 
             </div>
             <!-- fin tableau -->
